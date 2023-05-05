@@ -5,7 +5,7 @@
     <title>Kaibry Southern's Page</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
   </head>
 
 <!-- NavBar  -->
@@ -26,13 +26,13 @@
         <ul class="navbar-nav">
 
           <li class="nav-item">
-          <a class="nav-link" href="https://kaibrysouthern.github.io/psychic-disco-final/">Home Page!</a>
+          <a class="nav-link" href="../index.html">Home Page!</a>
         </li> 
         <li>
-          <a class="nav-link" href="pages/uxbad.html">Bad UX Design!</a>
+          <a class="nav-link" href="uxbad.html">Bad UX Design!</a>
         </li>
         <li>
-          <a class="nav-link" href="pages/uxgood.html">Revised UX Design!</a>
+          <a class="nav-link" href="uxgood.html">Revised UX Design!</a>
         </li>
         <li>
           <a class="nav-link" href="https://github.com/kaibrysouthern/psychic-disco-final" target="_blank">See my Code!</a>
@@ -45,21 +45,24 @@
 
     <div id="allContent">
         <div class="info">
-          <p>There are many ways to fix the pre-filled text issue. Below, I have proposed one method of fixing the issues. This style can be modified to clarify many additional questions throughout the survey. As a result, the survey will offer a much better user experience. <br/><br/>
+          <p>There are many ways to fix the pre-filled text issue. Below, I have proposed one method of fixing the issues. This style can be modified to clarify many additional questions throughout the form. As a result, the textboxes located on the form will offer a much better user experience. <br/>
+            <p>Behind the scenes, there are limits and constraints for the users. However, typing out the number into an already cleared field is easier than the previous problem presented. The "Confirm" and "Reset Form" buttons would be located at the bottom of the page for the user to save or reset the information that has been entered. The previous buttons on the intial interface implied that the data on the page was not cleared or reset if the user left the page. Implementing a "Reset Form" button can be very helpful for the user versus the previous "Close" button.  </p>
         </div>
         <div id="showcase">
           <div class="mb-3 mt-3">
             <label for="year" class="form-label">Year of vehicle:</label>
             <input type="number" class="form-control" id="year" placeholder="Enter year" name="vehicleYear" min="1800" max="2025">
           </div>
-          <button id="formSubmit" type="submit" class="btn btn-outline-primary">Submit</button>
-          <button id="resetForm" class="btn btn-outline-danger" onClick="refreshPage();">
+          <button id="formSubmit" class="btn btn-success" onClick="submitForm();">Confirm</button>
+          <button id="resetForm" class="btn btn-danger" onClick="refreshPage();">
             Reset Form</button>
+          <br/>
+          <p id="carYear"></p>
           <br/>
 
         <div id="console-box"> 
         </div> 
-        <p><br>This design improves the user experience because the user does not have to delete any text. The user can automatically add the numbers into the textbox without deleting the pre-existing numbers. If there is an error, the user can easily reset the field. If the user wants to confirm the number they selected, the submit button allows an easy route to confirm the selection.</p>
+        <p><br>This design improves the user experience because the user does not have to delete any text. The user can automatically add the numbers into the textbox without deleting the pre-existing numbers. If there is an error, the user can easily reset the fields located on the form. If the user wants to confirm the number the information they have entered, the Confirm button allows an easy route to confirm the selection.</p>
       </div>
 
 
@@ -67,7 +70,7 @@
 <!-- scripts and stuff -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-<script src="scripts/script.js"></script>
+<script src="../scripts/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
